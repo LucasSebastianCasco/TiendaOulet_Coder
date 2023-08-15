@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda de productos</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    #productos-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #productos-list li {
+      width: 200px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #productos-list li img {
+      width: 100%;
+      height: auto;
+    }
+
+    #productos-list li span {
+      margin-bottom: 5px;
+    }
+
+    #productos-list li button {
+      display: block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido a Outlet</h1>
+  <div>
+    <h2>Productos disponibles:</h2>
+    <ul id="productos-list">
+      <!-- Lista de productos -->
+    </ul>
+  </div>
+
+  <div>
+    <h2>Carrito de compras:</h2>
+    <ul id="carrito-list">
+      <!-- productos que se agregaran al carrito -->
+    </ul>
+    <p>Total a pagar: $<span id="total-pagar">0.00</span></p>
+    <button id="comprarBoton">Comprar</button>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
